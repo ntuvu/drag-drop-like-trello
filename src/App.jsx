@@ -1,5 +1,4 @@
-import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
-
+import { AccessAlarm, ThreeDRotation } from '@mui/icons-material'
 
 function App() {
   return (
