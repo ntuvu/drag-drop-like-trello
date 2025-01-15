@@ -1,5 +1,3 @@
-// Updated by trungquandev.com's author on May 13 2023
-// Sample Eslint config for React project
 module.exports = {
   env: { browser: true, es2020: true, node: true },
   extends: [
@@ -42,12 +40,12 @@ module.exports = {
     'comma-dangle': 1,
     'comma-spacing': 1,
     'arrow-spacing': 1,
-    
+
     // MUI rule
     'no-restricted-imports': [
       'error',
       {
-        'pattern': ['@mui/*/*/*']
+        'patterns': ['@mui/*/*/*']
       }
     ]
   }

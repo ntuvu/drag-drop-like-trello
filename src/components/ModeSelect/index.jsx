@@ -8,7 +8,7 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
 import SettingBrightnessIcon from '@mui/icons-material/SettingsBrightness'
 import Box from '@mui/material/Box'
 
-function ModeSelect() {
+export default function ModeSelect() {
   const { mode, setMode } = useColorScheme()
 
   const handleChange = (event) => {
@@ -45,5 +45,3 @@ function ModeSelect() {
     </FormControl>
   )
 }
-
-export default ModeSelect

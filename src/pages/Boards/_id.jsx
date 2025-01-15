@@ -1,32 +1,15 @@
-import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
-import AppBar from '../../components/AppBar'
-import theme from '../../theme'
+import AppBar from '~/components/AppBar/index.jsx'
 
-function Board() {
+import BoardBar from './BoardBar/index.jsx'
+import BoardContent from './BoardContent/index.jsx'
+
+export default function Board() {
   return (
     <Container disableGutters maxWidth={false} sx={{ height: '100vh' }}>
       <AppBar />
-      <Box sx={{
-        backgroundColor: 'primary.dark',
-        width: '100%',
-        height: theme.trello.boardBarHeight,
-        display: 'flex',
-        alignItems: 'center'
-      }}>
-            Board bar
-      </Box>
-      <Box sx={{
-        backgroundColor: 'primary.main',
-        width: '100%',
-        height: `calc(100vh - ${theme.trello.appBarHeight} - ${theme.trello.boardBarHeight})`,
-        display: 'flex',
-        alignItems: 'center'
-      }}>
-            Board content
-      </Box>
+      <BoardBar />
+      <BoardContent />
     </Container>
   )
 }
-
-export default Board

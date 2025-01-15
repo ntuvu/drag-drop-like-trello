@@ -1,11 +1,9 @@
-import { AccessAlarm, ThreeDRotation } from '@mui/icons-material'
+import Board from '~/pages/Boards/_id'
 
 function App() {
   return (
     <>
-      <div>Tuvu dep trai</div>
-      <AccessAlarm />
-      <ThreeDRotation />
+      <Board />
     </>
   )
 }
